@@ -8,6 +8,8 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write     # Required to push commits to the repository
     steps:
       - name: Sync Solutions
         uses: joshcai/leetcode-sync@v1.5
